@@ -1,10 +1,10 @@
-package com.myapp.UserCrudApplica.Repository;
+package com.myapp.UserCrudApplica.repository;
 
 
-import com.myapp.UserCrudApplica.Entity.User;
+import com.myapp.UserCrudApplica.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Integer>{
-    User findByLogin(String login);
+    User findByLogin(String name);
 
 }
